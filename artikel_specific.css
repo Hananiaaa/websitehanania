@@ -1,0 +1,66 @@
+/* Styles specific to artikel.php */
+.article-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.article-card-inner {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left; /* Ensure all text is left-aligned */
+    flex-grow: 1;
+}
+
+.article-card-inner h3 {
+    margin-bottom: 8px; /* Slightly reduced margin */
+    color: #333;
+    font-size: 1.1em; /* Slightly reduced font size for title */
+    line-height: 1.3; /* Improve readability */
+}
+
+.article-image-container {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    margin-bottom: 8px; /* Slightly reduced margin */
+}
+
+.article-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.article-card-inner p {
+    margin-bottom: 8px; /* Slightly reduced margin */
+    color: #555;
+    font-size: 0.9em; /* Slightly reduced font size for description */
+    line-height: 1.5; /* Improve readability */
+    max-height: 4.5em; /* Limit to approximately 3 lines (1.5 * 3) */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box; /* For multi-line ellipsis */
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    flex-grow: 1;
+}
+
+.article-card-inner a.btn {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 6px 12px; /* Slightly smaller button padding */
+    font-size: 0.9em; /* Slightly smaller button font size */
+}
+

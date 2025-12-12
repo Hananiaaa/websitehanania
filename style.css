@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* --- Basic Setup --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fde2e4 0%, #e6e6fa 100%); /* Soft Pink to Lilac */
+    color: #4a4a4a;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* --- Navigation --- */
+.navbar {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar-brand {
+    color: #EC9EC0 !important; /* Softer Accent Pink */
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #555 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: #EC9EC0 !important; /* Softer Accent Pink */
+}
+
+/* --- Layout & Cards --- */
+.container {
+    max-width: 1140px;
+}
+
+.hero-section {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.soft-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(100, 100, 150, 0.15);
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.soft-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px 0 rgba(100, 100, 150, 0.2);
+}
+
+/* --- Typography --- */
+.main-header {
+    font-weight: 700;
+    color: #333;
+    font-size: 3.5rem;
+}
+
+.lead {
+    font-weight: 400;
+    color: #555;
+    font-size: 1rem; /* Even smaller */
+    line-height: 1.5; /* Reduced line height */
+    max-width: 600px;
+    margin: 0.5rem auto 1.5rem auto;
+}
+
+.card-title-soft {
+    font-weight: 600;
+    color: #EC9EC0; /* Softer Accent Pink */
+    border-bottom: 3px solid rgba(236, 158, 192, 0.2);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.list-group-item {
+    background-color: transparent;
+    color: #4a4a4a;
+    border: none;
+    padding: 0.8rem 0;
+}
+
+/* --- Profile Picture --- */
+.profile-pic-container {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #fad0c4 0%, #EC9EC0 100%); /* New Gradient */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    margin: 0 auto 2rem auto;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic-container:hover {
+    transform: scale(1.05);
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    padding: 2.5rem 0;
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* --- Animations --- */
+.animated-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animated-fade-in.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+
+/* --- Progress Bar --- */
+.progress-bar {
+    background-color: #EC9EC0 !important; /* Softer Accent Pink */
+}
+
+/* --- Social Icons --- */
+.social-icon {
+    font-size: 2rem;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #EC9EC0; /* Softer Accent Pink */
+}
+
+/* --- Dark Theme --- */
+body.dark-theme {
+    background: linear-gradient(135deg, #4c1d95 0%, #2c3e50 100%); /* New Dark Gradient */
+    color: #ecf0f1;
+}
+
+body.dark-theme .navbar {
+    background: rgba(44, 62, 80, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .navbar-brand {
+    color: #EC9EC0 !important; /* Softer Accent Pink */
+}
+
+body.dark-theme .nav-link {
+    color: #ecf0f1 !important;
+}
+
+body.dark-theme .nav-link.active, body.dark-theme .nav-link:hover {
+    color: #EC9EC0 !important; /* Softer Accent Pink */
+}
+
+body.dark-theme .soft-card {
+    background: rgba(52, 73, 94, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+body.dark-theme .main-header {
+    color: #ecf0f1;
+}
+
+body.dark-theme .lead {
+    color: #bdc3c7;
+}
+
+body.dark-theme .card-title-soft {
+    color: #EC9EC0; /* Softer Accent Pink */
+    border-bottom-color: rgba(236, 158, 192, 0.3);
+}
+
+body.dark-theme .list-group-item {
+    color: #ecf0f1;
+}
+
+body.dark-theme .profile-pic-container {
+    background: linear-gradient(135deg, #EC9EC0 0%, #4c1d95 100%); /* New Dark Gradient */
+}
+
+body.dark-theme .footer {
+    color: #bdc3c7;
+}
+
+body.dark-theme .progress-bar {
+    background-color: #EC9EC0 !important; /* Softer Accent Pink */
+}
+
+body.dark-theme .social-icon {
+    color: #ecf0f1;
+}
+
+body.dark-theme .social-icon:hover {
+    color: #EC9EC0; /* Softer Accent Pink */
+}
+
+/* --- Custom Button --- */
+.btn-custom-gradient {
+    background: linear-gradient(45deg, #fbc2eb 0%, #a6c1ee 100%);
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom-gradient:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #a6c1ee 0%, #fbc2eb 100%);
+}
+
+/* --- Artikel Page Specific Styles --- */
+.soft-card.article-card {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.soft-card.article-card .card-body-content {
+    padding: 2rem; /* Diperbesar */
+    flex-grow: 1; /* Memastikan konten mengisi ruang yang tersedia */
+    display: flex;
+    flex-direction: column;
+}
+
+.soft-card.article-card .card-title-soft {
+    font-weight: 700;
+    font-size: 1.8rem; /* Diperbesar */
+    margin-bottom: 1rem;
+}
+
+.soft-card.article-card .article-card-image {
+    width: 100%;
+    aspect-ratio: 3 / 2; /* Sedikit lebih lebar, tetap sedikit panjang */
+    object-fit: cover;
+    border-radius: 15px; /* Semua sudut melengkung */
+    margin-bottom: 1rem;
+}
+
+.soft-card.article-card .btn-custom-gradient {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    width: auto;
+    display: inline-block;
+    align-self: flex-start; /* Menjaga tombol di kiri */
+    margin-top: auto; /* Mendorong tombol ke bawah */
+}
+
+/* --- Pengalaman Page Images --- */
+.pengalaman-img-container {
+    border-radius: 20px; /* Slightly larger than image's border-radius */
+    background: linear-gradient(135deg, #fad0c4 0%, #EC9EC0 100%);
+    padding: 5px; /* This creates the border width */
+    margin: 1rem auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.pengalaman-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 15px; /* Rounded corners */
+    display: block;
+}
