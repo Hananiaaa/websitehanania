@@ -3,7 +3,7 @@
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
-define('DB_NAME', 'hananiacv');
+define('DB_NAME', 'psas_db');
 
 /* --- Membuat Koneksi PDO --- */
 try {
