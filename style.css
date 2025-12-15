@@ -3,7 +3,7 @@
 /* --- Basic Setup --- */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #fde2e4 0%, #e6e6fa 100%); /* Soft Pink to Lilac */
+    background: linear-gradient(135deg, #ef989d 0%, #e6e6fa 100%); /* Soft Pink to Lilac */
     color: #4a4a4a;
     margin: 0;
     padding: 0;
@@ -21,7 +21,7 @@ body {
 }
 
 .navbar-brand {
-    color: #EC9EC0 !important; /* Softer Accent Pink */
+    color: #ea7fad !important; /* Softer Accent Pink */
     font-weight: 700;
     font-size: 1.5rem;
 }
@@ -159,7 +159,7 @@ body {
 }
 
 .social-icon:hover {
-    color: #EC9EC0; /* Softer Accent Pink */
+    color: #eb93b9; /* Softer Accent Pink */
 }
 
 /* --- Dark Theme --- */
@@ -174,7 +174,7 @@ body.dark-theme .navbar {
 }
 
 body.dark-theme .navbar-brand {
-    color: #EC9EC0 !important; /* Softer Accent Pink */
+    color: #ee95bc !important; /* Softer Accent Pink */
 }
 
 body.dark-theme .nav-link {
